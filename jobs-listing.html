@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowongan Pekerjaan - Berkarir</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="./assets/css/styles.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="header-container">
+          <div class="main-container">
+            <div class="header-wrapper">
+              <div class="header-logo"><a href="index.html"><img src="./assets/images/logo.svg" alt="Berkarir"></a></div>
+              <div class="header-menu">
+                <div class="header-mobile">
+                  <div class="header-mobile-button"><span></span><span></span><span></span></div>
+                </div>
+                <div class="header-menu-wrapper">
+                  <nav>
+                    <ul>
+                      <li><a href="jobs-listing.html">Lowongan Pekerjaan</a></li>
+                      <li><a href="#">Masuk</a></li>
+                      <li><a href="#">Daftar</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+        <section class="section-page">
+          <div class="main-container">
+            <div class="page-container">
+              <div class="page-wrapper">
+                <div class="page-content">
+                  <div class="jobs-listing">
+                    <div class="jobs-listing-title">
+                      <h1>Lowongan Pekerjaan</h1>
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                          <p>Lowongan Pekerjaan</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="jobs-listing-container">
+                      <div class="jobs-listing-filter">
+                        <div class="filter-navigation">
+                          <p>Filter</p>
+                        </div>
+                        <div class="filter-group">
+                          <h3>Posisi</h3>
+                          <div class="filter-input">
+                            <div class="input-icon"><i class="fa-solid fa-briefcase"></i>
+                              <input type="text" placeholder="Jabatan atau perusahaan">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter-group">
+                          <h3>Lokasi</h3>
+                          <div class="filter-input">
+                            <div class="input-icon"><i class="fa-solid fa-location-dot"></i>
+                              <input type="text" placeholder="Kota">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter-group">
+                          <h3>Kategori Pekerjaan</h3>
+                          <ul>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="accounting-finance" type="checkbox" checked>
+                                <label for="accounting-finance">Accounting & Finance</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="marketing" type="checkbox" checked>
+                                <label for="marketing">Marketing</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="art-design" type="checkbox" checked>
+                                <label for="art-design">Art & Design</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="human-resource" type="checkbox" checked>
+                                <label for="human-resource">Human Resource</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="engineering-technician" type="checkbox" checked>
+                                <label for="engineering-technician">Engineering & Technician</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="food-beverage" type="checkbox" checked>
+                                <label for="food-beverage">Food & Beverage</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="information-technology" type="checkbox" checked>
+                                <label for="information-technology">Information Technology</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="education" type="checkbox" checked>
+                                <label for="education">Education</label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="filter-group">
+                          <h3>Tipe Pekerjaan</h3>
+                          <ul>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="full-time" type="checkbox" checked>
+                                <label for="full-time">Full Time</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="part-time" type="checkbox" checked>
+                                <label for="part-time">Part Time</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="freelance" type="checkbox" checked>
+                                <label for="freelance">Freelance</label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="filter-group">
+                          <h3>Pengalaman</h3>
+                          <ul>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="less-than-a-year" type="checkbox" checked>
+                                <label for="less-than-a-year">Kurang dari 1 tahun</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="more-than-a-year" type="checkbox" checked>
+                                <label for="more-than-a-year">1 - 5 tahun</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="custom-checkbox">
+                                <input id="more-than-5-years" type="checkbox" checked>
+                                <label for="more-than-5-years">Lebih dari 5 tahun</label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="filter-group">
+                          <h3>Gaji</h3>
+                          <div class="price-range">
+                            <div class="price-range-group"><span>Rp</span>
+                              <input type="text" placeholder="1.000.000">
+                            </div>
+                            <p>-</p>
+                            <div class="price-range-group"><span>Rp</span>
+                              <input type="text" placeholder="20.000.000">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="jobs-listing-wrapper">
+                        <div class="jobs-listing-info">
+                          <p>Menampilkan <strong>1-6</strong> dari <strong>1096</strong> pekerjaan</p>
+                        </div>
+                        <div class="jobs-listing-grid">
+                          <div class="jobs-listing-item"><a href="job-detail.html"> </a>
+                            <div class="jobs-listing-save">
+                              <button><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                            <div class="jobs-listing-position">
+                              <div class="jobs-listing-icon"><img src="./assets/images/dummy/google.png" alt="Berkarir"></div>
+                              <div class="jobs-listing-text">
+                                <h3>Data Architect</h3>
+                                <p>Google</p>
+                              </div>
+                            </div>
+                            <div class="jobs-listing-detail">
+                              <ul>
+                                <li>
+                                  <p><i class="fa-regular fa-clock"></i><span>Fulltime</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-location-dot"></i><span>Jakarta, Indonesia</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-wallet"></i><span>Dirahasiakan</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="jobs-listing-description">
+                              <p>Google Cloud helps millions of employees and organizations empower their employees, serve their customers, and build what's next for their...</p>
+                            </div>
+                            <div class="jobs-listing-more">
+                              <p><i class="fa-solid fa-calendar"></i><span>2 hours ago</span></p><a class="btn btn-outline-primary" href="job-detail.html">Lamar</a>
+                            </div>
+                          </div>
+                          <div class="jobs-listing-item"><a href="job-detail.html"> </a>
+                            <div class="jobs-listing-save">
+                              <button><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                            <div class="jobs-listing-position">
+                              <div class="jobs-listing-icon"><img src="./assets/images/dummy/google.png" alt="Berkarir"></div>
+                              <div class="jobs-listing-text">
+                                <h3>Trends Manager</h3>
+                                <p>Google</p>
+                              </div>
+                            </div>
+                            <div class="jobs-listing-detail">
+                              <ul>
+                                <li>
+                                  <p><i class="fa-regular fa-clock"></i><span>Fulltime</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-location-dot"></i><span>Jakarta, Indonesia</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-wallet"></i><span>Dirahasiakan</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="jobs-listing-description">
+                              <p>YouTube Marketing's mission is to know our users, and to connect them to the magic of our products and creators. We make YouTube successful...</p>
+                            </div>
+                            <div class="jobs-listing-more">
+                              <p><i class="fa-solid fa-calendar"></i><span>2 hours ago</span></p><a class="btn btn-outline-primary" href="job-detail.html">Lamar</a>
+                            </div>
+                          </div>
+                          <div class="jobs-listing-item"><a href="job-detail.html"> </a>
+                            <div class="jobs-listing-save">
+                              <button><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                            <div class="jobs-listing-position">
+                              <div class="jobs-listing-icon"><img src="./assets/images/dummy/tokopedia.png" alt="Berkarir"></div>
+                              <div class="jobs-listing-text">
+                                <h3>Senior UI Designer</h3>
+                                <p>Tokopedia</p>
+                              </div>
+                            </div>
+                            <div class="jobs-listing-detail">
+                              <ul>
+                                <li>
+                                  <p><i class="fa-regular fa-clock"></i><span>Fulltime</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-location-dot"></i><span>Jakarta, Indonesia</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-wallet"></i><span>Dirahasiakan</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="jobs-listing-description">
+                              <p>Collaborate and give advise to UX Designers & UX Engineers on UI perspective from initial product design process</p>
+                            </div>
+                            <div class="jobs-listing-more">
+                              <p><i class="fa-solid fa-calendar"></i><span>2 hours ago</span></p><a class="btn btn-outline-primary" href="job-detail.html">Lamar</a>
+                            </div>
+                          </div>
+                          <div class="jobs-listing-item"><a href="job-detail.html"> </a>
+                            <div class="jobs-listing-save">
+                              <button><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                            <div class="jobs-listing-position">
+                              <div class="jobs-listing-icon"><img src="./assets/images/dummy/tokopedia.png" alt="Berkarir"></div>
+                              <div class="jobs-listing-text">
+                                <h3>Senior UX Designer</h3>
+                                <p>Tokopedia</p>
+                              </div>
+                            </div>
+                            <div class="jobs-listing-detail">
+                              <ul>
+                                <li>
+                                  <p><i class="fa-regular fa-clock"></i><span>Fulltime</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-location-dot"></i><span>Jakarta, Indonesia</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-wallet"></i><span>Dirahasiakan</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="jobs-listing-description">
+                              <p>Collaborate and give advise to UX Designers & UX Engineers on UI perspective from initial product design process</p>
+                            </div>
+                            <div class="jobs-listing-more">
+                              <p><i class="fa-solid fa-calendar"></i><span>2 hours ago</span></p><a class="btn btn-outline-primary" href="job-detail.html">Lamar</a>
+                            </div>
+                          </div>
+                          <div class="jobs-listing-item"><a href="job-detail.html"> </a>
+                            <div class="jobs-listing-save">
+                              <button><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                            <div class="jobs-listing-position">
+                              <div class="jobs-listing-icon"><img src="./assets/images/dummy/tokopedia.png" alt="Berkarir"></div>
+                              <div class="jobs-listing-text">
+                                <h3>Software Engineer</h3>
+                                <p>Tokopedia</p>
+                              </div>
+                            </div>
+                            <div class="jobs-listing-detail">
+                              <ul>
+                                <li>
+                                  <p><i class="fa-regular fa-clock"></i><span>Fulltime</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-location-dot"></i><span>Jakarta, Indonesia</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-wallet"></i><span>Dirahasiakan</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="jobs-listing-description">
+                              <p>Design improvements to our existing product in the mobile web platform by utilizing core Computer Science thought processes and focusing on...</p>
+                            </div>
+                            <div class="jobs-listing-more">
+                              <p><i class="fa-solid fa-calendar"></i><span>2 hours ago</span></p><a class="btn btn-outline-primary" href="job-detail.html">Lamar</a>
+                            </div>
+                          </div>
+                          <div class="jobs-listing-item"><a href="job-detail.html"> </a>
+                            <div class="jobs-listing-save">
+                              <button><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                            <div class="jobs-listing-position">
+                              <div class="jobs-listing-icon"><img src="./assets/images/dummy/gojek.png" alt="Berkarir"></div>
+                              <div class="jobs-listing-text">
+                                <h3>Account Executive</h3>
+                                <p>Gojek</p>
+                              </div>
+                            </div>
+                            <div class="jobs-listing-detail">
+                              <ul>
+                                <li>
+                                  <p><i class="fa-regular fa-clock"></i><span>Fulltime</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-location-dot"></i><span>Bali, Indonesia</span></p>
+                                </li>
+                                <li>
+                                  <p><i class="fa-solid fa-wallet"></i><span>Dirahasiakan</span></p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="jobs-listing-description">
+                              <p>Strap on your helmet and climb on board if you're ready to be our Account Executive. Based in Denpasar, you’ll be part of the Indonesia Region team...</p>
+                            </div>
+                            <div class="jobs-listing-more">
+                              <p><i class="fa-solid fa-calendar"></i><span>2 hours ago</span></p><a class="btn btn-outline-primary" href="job-detail.html">Lamar</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="jobs-listing-pagination">
+                          <ul>
+                            <li class="prev"><a href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+                            <li class="active"><a href="#"><span>1</span></a></li>
+                            <li><a href="#"><span>2</span></a></li>
+                            <li><a href="#"><span>3</span></a></li>
+                            <li class="next"><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="subscription-box">
+                  <div class="subscription-box-wrapper">
+                    <div class="subscription-box-text">
+                      <h2>Dapatkan info lowongan setiap hari</h2>
+                    </div>
+                    <div class="subscription-box-form">
+                      <div class="group-form">
+                        <div class="form-wrapper">
+                          <div class="form-group-input">
+                            <input type="email" placeholder="Alamat email">
+                          </div>
+                          <div class="form-group-button">
+                            <button class="btn btn-primary">Langganan</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="main-container">
+            <div class="footer-wrapper">
+              <div class="footer-top">
+                <div class="footer-info">
+                  <div class="footer-logo"><a href="index.html"> <img src="./assets/images/logo.svg" alt="Berkarir"></a></div>
+                  <ul>
+                    <li>
+                      <p>+62811-2345-6789</p>
+                    </li>
+                    <li>
+                      <p>contact@berkarir.id</p>
+                    </li>
+                  </ul>
+                  <div class="footer-social">
+                    <ul>
+                      <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-menu">
+                  <div class="footer-menu-group">
+                    <h3>Perusahaan</h3>
+                    <ul>
+                      <li><a href="#">Tentang Kami</a></li>
+                      <li><a href="#">Mengapa Kami</a></li>
+                      <li><a href="#">Karir</a></li>
+                      <li><a href="#">Blog</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-menu-group">
+                    <h3>Legal</h3>
+                    <ul>
+                      <li><a href="#">Kebijakan Privasi</a></li>
+                      <li><a href="#">Syarat &amp; Ketentuan</a></li>
+                      <li><a href="#">Pusat Bantuan</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-menu-group">
+                    <h3>Navigasi</h3>
+                    <ul>
+                      <li><a href="#">Pasang Loker</a></li>
+                      <li><a href="#">Masuk</a></li>
+                      <li><a href="#">Daftar</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div class="footer-text">
+                  <p>Copyright © 2021 Berkarir. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/scripts.min.js"></script>
+  </body>
+</html>
