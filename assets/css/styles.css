@@ -235,20 +235,46 @@ section.section-page::before {
 }
 
 .filter-navigation {
+  padding: 20px;
   cursor: pointer;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #9399B3;
+  border-radius: 10px;
+}
+
+.filter-navigation.clicked .fa-chevron-down {
+  -webkit-transform: rotateZ(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotateZ(180deg);
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .filter-navigation p {
   margin: 0;
-  padding: 20px;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0.5px;
-  text-align: center;
   color: #252D4A;
-  border: 1px solid #9399B3;
-  border-radius: 10px;
+}
+
+.filter-navigation .fa-chevron-down {
+  -webkit-transform: rotateZ(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotateZ(0deg);
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  color: #252D4A;
 }
 
 .filter-group {
@@ -269,7 +295,7 @@ section.section-page::before {
 }
 
 .filter-group h3 + ul {
-  margin: 20px 0 0;
+  margin: 10px 0 0;
 }
 
 .filter-group > ul {
@@ -283,11 +309,11 @@ section.section-page::before {
 }
 
 .filter-group > ul li + li {
-  margin: 20px 0 0;
+  margin: 10px 0 0;
 }
 
 .filter-input {
-  margin: 20px 0 0;
+  margin: 10px 0 0;
 }
 
 .custom-checkbox {
@@ -577,8 +603,8 @@ section.section-page::before {
   top: 64px;
   right: 0;
   width: 100vw;
-  background-color: #FFFFFF;
-  padding: 60px 0;
+  padding: 20px 0 60px;
+  background-color: #1B285F;
   visibility: hidden;
   opacity: 0;
 }
@@ -625,7 +651,7 @@ section.section-page::before {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0.5px;
-  color: #252D4A;
+  color: #FFFFFF;
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -843,7 +869,7 @@ section.section-page::before {
 }
 
 .home-hero-form {
-  margin: 60px 0 0;
+  margin: 40px 0 0;
 }
 
 .home-hero-form .group-form .form-wrapper {
@@ -892,17 +918,17 @@ section.section-page::before {
 .home-hero-image {
   position: relative;
   z-index: 0;
-  margin: 150px 0 -50px;
+  margin: 100px 0 -50px;
 }
 
 .home-hero-image > img {
   position: relative;
   z-index: 1;
-  width: 400px;
-  height: 400px;
+  width: 256px;
+  height: 256px;
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 200px;
+  border-radius: 100%;
 }
 
 .home-hero-image .hero-bg {
@@ -916,8 +942,8 @@ section.section-page::before {
 }
 
 .home-hero-image .hero-bg img {
-  width: 880px;
-  height: 880px;
+  width: 580px;
+  height: 580px;
 }
 
 .home-hero-image .hero-company-image {
@@ -941,29 +967,29 @@ section.section-page::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   background-color: #FFFFFF;
   border-radius: 50%;
 }
 
 .home-hero-image .hero-company-icon:nth-child(1) {
-  top: 38px;
-  left: -105px;
+  top: 15px;
+  left: -65px;
 }
 
 .home-hero-image .hero-company-icon:nth-child(2) {
-  top: 292px;
-  left: 285px;
+  top: 182px;
+  left: 185px;
 }
 
 .home-hero-image .hero-company-icon:nth-child(3) {
-  top: -90px;
+  top: -70px;
   right: 10px;
 }
 
 .home-hero-image .hero-company-icon img {
-  max-width: 60px;
+  max-width: 30px;
 }
 
 .home-company-highlight {
@@ -1243,12 +1269,12 @@ section.section-page::before {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin: 80px 0 0;
+  margin: 60px 0 0;
 }
 
 .jobs-listing-filter {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 30px;
   width: 100%;
 }
 
@@ -1908,7 +1934,7 @@ section.section-page::before {
   -ms-flex-align: center;
   align-items: center;
   grid-gap: 10px;
-  margin: 20px 0 0;
+  margin: 10px 0 0;
 }
 
 .price-range p {
@@ -2233,6 +2259,10 @@ section.section-page::before {
     flex-direction: row;
   }
 
+  .home-hero-form {
+    margin: 60px 0 0;
+  }
+
   .home-hero-form .group-form .form-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2256,6 +2286,44 @@ section.section-page::before {
 
   .home-hero-form .group-form .form-wrapper .form-group-button {
     width: 100px;
+  }
+
+  .home-hero-image {
+    margin: 150px 0 -50px;
+  }
+
+  .home-hero-image > img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .home-hero-image .hero-bg img {
+    width: 880px;
+    height: 880px;
+  }
+
+  .home-hero-image .hero-company-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .home-hero-image .hero-company-icon:nth-child(1) {
+    top: 38px;
+    left: -105px;
+  }
+
+  .home-hero-image .hero-company-icon:nth-child(2) {
+    top: 292px;
+    left: 285px;
+  }
+
+  .home-hero-image .hero-company-icon:nth-child(3) {
+    top: -90px;
+    right: 10px;
+  }
+
+  .home-hero-image .hero-company-icon img {
+    max-width: 60px;
   }
 
   .jobs-category-grid {
@@ -2290,6 +2358,18 @@ section.section-page::before {
 
   .filter-group {
     display: block;
+  }
+
+  .filter-group h3 + ul {
+    margin: 20px 0 0;
+  }
+
+  .filter-group > ul li + li {
+    margin: 20px 0 0;
+  }
+
+  .filter-input {
+    margin: 20px 0 0;
   }
 
   .subscription-box {
@@ -2388,10 +2468,12 @@ section.section-page::before {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    margin: 80px 0 0;
   }
 
   .jobs-listing-filter {
     width: 360px;
+    gap: 50px;
   }
 
   .jobs-listing-wrapper {
@@ -2433,6 +2515,10 @@ section.section-page::before {
   .job-detail-info {
     width: 360px;
     padding: 0;
+  }
+
+  .price-range {
+    margin: 20px 0 0;
   }
 
   .company-detail-icon {

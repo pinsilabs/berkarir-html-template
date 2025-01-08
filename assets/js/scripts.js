@@ -34,6 +34,7 @@
 
   // Jobs listing filter
   $('.filter-navigation').on('click', function() {
+    $(this).toggleClass('clicked');
     $(this).parent().find('.filter-group').toggleClass('show');
   });
 
