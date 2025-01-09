@@ -1,6 +1,6 @@
 # Berkarir HTML Templates
 
-Build wth HTML, CSS and JavaScript (jQuery)
+Build with HTML, CSS and JavaScript
 
 ## Credits
 * Font Awesome 6.3.0
